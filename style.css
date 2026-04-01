@@ -1,41 +1,12 @@
-body{
-font-family:Arial;
-background:#f5f7fa;
-text-align:center;
-margin:0;
-}
-header{
-background:#4CAF50;
-color:white;
-padding:20px;
-}
-.box{
-background:white;
-padding:20px;
-margin:20px auto;
-max-width:400px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-input,select,button{
-width:90%;
-padding:12px;
-margin:10px;
-font-size:16px;
-}
-button{
-background:#4CAF50;
-color:white;
-border:none;
-cursor:pointer;
-}
-#resultado{
-margin-top:15px;
-font-size:18px;
-font-weight:bold;
-}
-.ads{
-margin:20px;
-padding:20px;
-background:#ddd;
-}
+body{font-family:Arial;margin:0;background:#f5f7fa;text-align:center}
+header{background:linear-gradient(90deg,#2e7d32,#66bb6a);color:#fff;padding:25px}
+.box{background:#fff;margin:20px auto;padding:20px;max-width:400px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+input,select,button{width:90%;padding:12px;margin:10px;font-size:16px;border-radius:8px;border:1px solid #ccc}
+button{background:#2e7d32;color:#fff;border:none;cursor:pointer}
+.refazer{background:#777}
+#resultado{margin-top:15px;font-size:18px;font-weight:bold}
+.barra{width:100%;height:20px;background:#ddd;border-radius:10px;margin-top:10px}
+#progresso{height:100%;width:0%;background:#2e7d32;border-radius:10px;transition:0.5s}
+.ads{background:#ddd;margin:20px;padding:20px}
+.content{max-width:700px;margin:auto;text-align:left;padding:20px}
+footer{background:#2e7d32;color:#fff;padding:15px;margin-top:20px}

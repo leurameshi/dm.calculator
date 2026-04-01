@@ -8,32 +8,11 @@ function formatarAltura(valor){
   return parseFloat(valor);
 }
 
-function mostrarAviso(){
-  if(bloqueado){
-    document.getElementById('resultado').innerHTML =
-      "⚠️ Clique em REFAZER para calcular novamente 👇";
-  }
-}
-
-function travarCampos(travar){
-  let campos = document.querySelectorAll("input, select");
-
-  campos.forEach(campo => {
-    campo.disabled = travar;
-
-    // adiciona evento de clique
-    campo.onclick = function(){
-      if(bloqueado){
-        mostrarAviso();
-      }
-    }
-  });
-}
-
 function calcularIMC(){
 
   if(bloqueado){
-    mostrarAviso();
+    document.getElementById('resultado').innerHTML =
+      "Clique em REFAZER para calcular novamente 👇";
     return;
   }
 
@@ -47,7 +26,7 @@ function calcularIMC(){
     return;
   }
 
-  // ⏳ carregando
+  // ⏳ efeito carregando
   document.getElementById('resultado').innerHTML = "Calculando seu resultado...";
   document.getElementById('progresso').style.width = "20%";
 
@@ -57,29 +36,30 @@ function calcularIMC(){
 
     let status='';
     let progresso=0;
-    let cor='';
+    let cor = '';
 
     if(imc < 18.5){
       status='Abaixo do peso';
       progresso=25;
-      cor='#e53935';
+      cor = '#e53935'; // vermelho
     }
     else if(imc < 25){
       status='Peso ideal';
       progresso=50;
-      cor='#2e7d32';
+      cor = '#2e7d32'; // verde
     }
     else if(imc < 30){
       status='Sobrepeso';
       progresso=75;
-      cor='#fbc02d';
+      cor = '#fbc02d'; // amarelo
     }
     else{
       status='Obesidade';
       progresso=100;
-      cor='#e53935';
+      cor = '#e53935'; // vermelho
     }
 
+    // aplica barra
     let barra = document.getElementById('progresso');
     barra.style.width = progresso+'%';
     barra.style.background = cor;
@@ -95,10 +75,9 @@ function calcularIMC(){
     document.getElementById('resultado').innerHTML =
     `IMC: ${imc} - ${status}<br>${dica}`;
 
-    // 🔒 TRAVA TUDO
+    // 🔒 trava
     bloqueado = true;
     document.querySelector("button").disabled = true;
-    travarCampos(true);
 
   }, 1500);
 }
@@ -113,21 +92,15 @@ function refazer(){
 
   let barra = document.getElementById('progresso');
   barra.style.width = "0%";
-  barra.style.background = "#2e7d32";
+  barra.style.background = "#2e7d32"; // volta verde padrão
 
   bloqueado = false;
 
   document.querySelector("button").disabled = false;
-  travarCampos(false);
 
-  // 💰 nova impressão de anúncio
+  // 💰 força nova impressão de anúncio
   location.reload();
 }
-
-// ativa eventos logo ao carregar
-window.onload = function(){
-  travarCampos(false);
-};
 
 
 
