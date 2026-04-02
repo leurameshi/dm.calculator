@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Peso Ideal</title>
+<link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.png"></head><body>
+<header><h1>Calcule seu Peso Ideal</h1></header>
+<nav>
+<a href="index.html">IMC</a> 
+<a href="agua.html">Água</a>
+<a href="peso.html">Peso Ideal</a>
+<a href="como-calcular-imc.html">Como Calcular IMC</a>
+</nav>
+<div class="box">
+<input id="altura" placeholder="Digite a Altura">
+<button onclick="calc()">Calcular</button>
+<div id="resultado"></div>
+</div>
+<div class="ads"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5934645075121273"
+     crossorigin="anonymous"></script></div>
+<footer>
+<p>© 2026 Calculadora IMC Fácil | Todos os direitos reservados</p>
+</footer>
+<script>
+function calc(){
+let a=altura.value;
+resultado.innerHTML="Peso ideal: "+(22*a*a).toFixed(1);
+}
+</script></body></html>

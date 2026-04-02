@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Calorias</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1>Calorias</h1></header>
+<div class="box">
+<input id="peso" placeholder="Peso">
+<input id="altura" placeholder="Altura">
+<input id="idade" placeholder="Idade">
+<button onclick="calc()">Calcular</button>
+<div id="resultado"></div>
+</div>
+<div class="ads">Anúncio</div>
+<footer>© 2026</footer>
+<script>
+function calc(){
+let p=peso.value,a=altura.value,i=idade.value;
+let tmb=88+(13.4*p)+(4.8*a*100)-(5.7*i);
+resultado.innerHTML="Calorias: "+Math.round(tmb);
+}
+</script></body></html>

@@ -11,10 +11,17 @@
 <body>
 
 <header>
-<img src="logo.jpeg" alt="logo" class="banner" />
+<h1>Calculadora de IMC</h1>
 <p>Resultado personalizado por sexo e idade</p>
 </header>
-
+<div class="ads"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5934645075121273"
+     crossorigin="anonymous"></script></div>
+<nav>
+<a href="index.html">IMC</a> 
+<a href="agua.html">Água</a>
+<a href="peso.html">Peso Ideal</a>
+<a href="como-calcular-imc.html">Como Calcular IMC</a>
+</nav>
 <main>
 <div class="box">
 
