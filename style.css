@@ -1,5 +1,5 @@
 body{font-family:Arial;margin:0;background:#f5f7fa;text-align:center}
-header{background:linear-gradient(90deg,#2e7d32,#66bb6a);color:#fff;padding:25px}
+header{background:linear-gradient(90deg,#2e7d32,#66bb6a);color:#fff;padding:25px; text-align:center; padding: 10px;}
 .box{background:#fff;margin:20px auto;padding:20px;max-width:400px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
 input,select,button{width:90%;padding:12px;margin:10px;font-size:16px;border-radius:8px;border:1px solid #ccc}
 button{background:#2e7d32;color:#fff;border:none;cursor:pointer}
@@ -25,7 +25,10 @@ h2 {color:#2e6d32;}
 }
 
 .logo {
-  width: 400px;
+  width: 100%;
+  max-width:200px;
+  height: auto;
+  margin: 0 auto 10px;
   display: block;
   margin: 0 auto 10px;
 }
