@@ -128,7 +128,7 @@ function refazer(){
 window.onload = function(){
   travarCampos(false);
 };
-
+document.getElementById("produto").style.display = "block";
 
 
 
