@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="leand" >
+    <link rel="icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy BMI Calculator</title>
+    <meta name="description" content="Calculate your BMI with complete analysis by age and sex.">
+    <link rel="stylesheet" href="style.css">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5934645075121273"
+     crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-5934645075121273">
+     </head>
+<body>
+    <header class="topo">
+        <img src="logoen.jpeg" alt="Easy BMI Calculator" class="logo">
+        <h1>Calculate Your Ideal Weight</h1>
+    </header>
+    <nav>
+        <a href="en.html">BMI</a>
+        <a href="water.html">Water</a>
+        <a href="ideal-weight.html">Your Weight</a>
+        <a href="how-to-calculate-bmi.html">Guide</a>
+    </nav>
+    <div class="box">
+        <input id="height" placeholder="Enter your height">
+        <button onclick="calc()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <div class="ads">
+        <script async="async" data-cfasync="false" src="https://pl29082852.profitablecpmratenetwork.com/d5f940131eebcb212b456f7a0e274be8/invoke.js"></script>
+        <div id="container-d5f940131eebcb212b456f7a0e274be8"></div>
+    </div>
+    <section style="max-width:800px;margin:30px auto;padding:15px;line-height:1.6;">
+        <h2>What is the ideal weight for my height?</h2>
+        <p>The ideal weight varies according to height, age, sex, and body composition. One of the most used methods to estimate ideal weight is through BMI (Body Mass Index).</p>
+        <h2>How to calculate ideal weight?</h2>
+        <p>A common way to estimate ideal weight is using the average healthy BMI value, which is between 18.5 and 24.9.</p>
+        <p>For example, a person with a height of 1.70m can have a healthy weight between approximately 53 kg and 72 kg.</p>
+        <h2>Factors that influence ideal weight</h2>
+        <ul>
+            <li>Age</li>
+            <li>Sex</li>
+            <li>Physical activity level</li>
+            <li>Muscle mass</li>
+            <li>Genetics</li>
+        </ul>
+        <h2>Why maintain ideal weight?</h2>
+        <p>Maintaining weight within a healthy range helps reduce the risk of various diseases, such as diabetes, hypertension, and cardiovascular problems.</p>
+        <h2>Tips for maintaining a healthy weight</h2>
+        <ul>
+            <li>Exercise regularly</li>
+            <li>Eat a balanced diet</li>
+            <li>Avoid excessive processed foods</li>
+            <li>Drink plenty of water</li>
+            <li>Have a good sleep routine</li>
+        </ul>
+        <p>The most important thing is to maintain healthy and consistent habits over time.</p>
+    </section>
+    <footer class="footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="about.html">About</a><br><br>
+        <p>&copy; 2026 Easy BMI Calculator | All rights reserved</p>
+    </footer>
+    <script>
+        function calc(){
+            let h = height.value;
+            result.innerHTML = "Ideal weight: " + (22 * h * h).toFixed(1) + " kg";
+        }
+    </script>
+</body>
+</html>
